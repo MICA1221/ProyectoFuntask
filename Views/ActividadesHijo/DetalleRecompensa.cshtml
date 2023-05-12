@@ -1,0 +1,19 @@
+﻿@model FunTask.Models.Recompensa
+
+@{
+    ViewData["Title"] = "Detalle de la Recompensa";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div class="card">
+    <img class="card-img-top" src="@Model.Imagen" alt="@Model.Nombre">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Nombre</h5>
+        <p class="card-text">@Model.Descripcion</p>
+    </div>
+</div>
+
+<div class="mt-3">
+    <a asp-action="Index" asp-controller="ActividadesHijo" class="btn btn-secondary">Volver a las actividades</a>
+</div>

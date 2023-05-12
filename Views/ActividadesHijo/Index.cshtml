@@ -1,0 +1,32 @@
+﻿@model IEnumerable<FunTask.Models.Actividad>
+
+@{
+    ViewData["Title"] = "Actividades del Hijo";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div class="row">
+    @foreach (var actividad in Model)
+    {
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="@actividad.Imagen" alt="@actividad.Titulo">
+                <div class="card-body">
+                    <h5 class="card-title">@actividad.Titulo</h5>
+                    <p class="card-text">@actividad.Descripcion</p>
+                    <p>Días completados: @actividad.DiasCompletados / @actividad.DiasParaRecompensa</p>
+                    <form asp-action="IncrementarDia" asp-controller="ActividadesHijo" method="post">
+                        <input type="hidden" name="actividadId" value="@actividad.ActividadId" />
+                        <button type="submit" class="btn btn-primary">Sumar un día</button>
+                    </form>
+                    <hr>
+                    <h6>Recompensa:</h6>
+                    <a asp-action="DetalleRecompensa" asp-controller="ActividadesHijo" asp-route-recompensaId="@actividad.RecompensaId">
+                        <img src="@actividad.Recompensa.Imagen" alt="@actividad.Recompensa.Nombre" style="width:100px; height:auto;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

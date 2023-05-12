@@ -1,0 +1,60 @@
+﻿@model FunTask.Models.Actividad
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Actividad</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Hijo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Hijo.HijoId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Titulo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Titulo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Imagen)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Imagen)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DiasParaRecompensa)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DiasParaRecompensa)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DiasCompletados)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DiasCompletados)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Recompensa)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Recompensa.Nombre)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.ActividadId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

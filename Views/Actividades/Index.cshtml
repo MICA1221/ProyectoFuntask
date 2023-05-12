@@ -1,0 +1,71 @@
+﻿@model IEnumerable<FunTask.Models.Actividad>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Actividades</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Hijo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Titulo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Imagen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DiasParaRecompensa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DiasCompletados)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Recompensa)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hijo.HijoId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Titulo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Imagen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiasParaRecompensa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiasCompletados)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Recompensa.Nombre)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ActividadId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ActividadId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ActividadId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,22 @@
+﻿@model IEnumerable<FunTask.Models.Hijo>
+
+@{
+    ViewData["Title"] = "Seleccionar Perfil de Hijo";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div class="row">
+    @foreach (var hijo in Model)
+    {
+        <div class="col-md-3 col-sm-6">
+            <div class="card">
+                <img class="card-img-top" src="@hijo.ImagenPerfil" alt="@hijo.NombreHijo">
+                <div class="card-body">
+                    <h5 class="card-title">@hijo.NombreHijo</h5>
+                    <a href="@Url.Action("Index", "ActividadesHijo", new { hijoId = hijo.HijoId })" class="btn btn-primary">Seleccionar</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
