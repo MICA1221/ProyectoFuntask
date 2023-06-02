@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MlhFfw1tI3sidq1V4i1/4mcQJ6xHZxT2S8RztG5Cj8yVepPaL/c8ijm0hoqfqjbnPJpmbeFjC0dQmGOQ5namsQ==",
+  "dgSpecHash": "BrIE29h4LkIYw7ctd3XB0kFqh2ej2p5uJrJJwlPGW/fwrakeNyFs8U47MbR2TNIA6zWHWl61Cbe4Sgoq4GTR7A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hp\\Desktop\\Proyecto SENA\\FunTask\\FunTask.csproj",
+  "projectFilePath": "C:\\ejemploRama\\Funtask\\FunTask.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hp\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Hp\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

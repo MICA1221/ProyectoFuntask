@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hp\\Desktop\\Proyecto SENA\\FunTask\\FunTask.csproj": {}
+    "C:\\ejemploRama\\Funtask\\FunTask.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hp\\Desktop\\Proyecto SENA\\FunTask\\FunTask.csproj": {
+    "C:\\ejemploRama\\Funtask\\FunTask.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hp\\Desktop\\Proyecto SENA\\FunTask\\FunTask.csproj",
+        "projectUniqueName": "C:\\ejemploRama\\Funtask\\FunTask.csproj",
         "projectName": "FunTask",
-        "projectPath": "C:\\Users\\Hp\\Desktop\\Proyecto SENA\\FunTask\\FunTask.csproj",
+        "projectPath": "C:\\ejemploRama\\Funtask\\FunTask.csproj",
         "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hp\\Desktop\\Proyecto SENA\\FunTask\\obj\\",
+        "outputPath": "C:\\ejemploRama\\Funtask\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -100,7 +101,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
